@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/png" href="Assets/imgs/worldwide.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha2/css/bootstrap.min.css"
+        integrity="sha512-AJqlPMFVh36uw2D9RLPBfAVy0S7OFl7zCOnnZTs0WAtaRzv1lK7tMoGz7k586FulS00KTNsWNr/5IVhIzBlEow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="planet"></div>
+    </div>
+
+
+    <nav>
+        <div class="container px-lg-4 d-flex justify-content-between align-items-center ">
+            <div class="logo">
+                Where in the world?
+            </div>
+            <div class="theme">
+                <div class="toggle-switch-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="toggle-switch-slider"></span>
+                    </label>
+                    <span class="toggle-switch-label ms-2">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="action-fields container px-4">
+        <form>
+            <div class="el-flex">
+                <div class="input-field">
+                    <input id="countrySearch" class="form-control ps-5" type="text"
+                        placeholder="Search for a country...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="input-field">
+                    <select id="regionSearch" class="form-select ps-4" aria-label="Default select example">
+                        <option disabled selected>Filter by Region</option>
+                        <option value="africa">Africa</option>
+                        <option value="america">America</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="all-countries mt-5">
+        <div class="container">
+            <div id="allCountries" class="row all-countries-data">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Bootstrap CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha2/js/bootstrap.bundle.min.js"
+    integrity="sha512-EG++JPXevM9zNXYPPRo2G+qFY6OuQivci8L7/8HMfGjSbbsoFywHdHq/lLgSk1XIZNwzxxnE0mUGJxVoSsoUgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- mine.js -->
+<script src="Assets/js/mine.js"></script>
+
+</html>
